@@ -17,3 +17,8 @@ if __name__ == "__main__":
         path = input('enter folder directory: ')
 
         title_to_filename(path)
+
+    elif action == '2':
+        path = input('enter folder directory: ')
+
+        enum_files(path)
