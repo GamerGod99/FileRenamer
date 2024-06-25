@@ -1,11 +1,19 @@
-import os
-
 from scripts import *
+from mp3_scripts import *
 
 if __name__ == "__main__":
-    path = input('enter folder directory: ')
 
-    pos = input('Enter cut positions: ').split()
-    pos = tuple([int(num) for num in pos])
+    action = input('Enter which action to use: ')
 
-    cut_names(path, pos)
+    if action == '0':
+        path = input('enter folder directory: ')
+
+        pos = input('Enter cut positions: ').split()
+        pos = tuple([int(num) for num in pos])
+
+        cut_names(path, pos)
+
+    elif action == '1':
+        path = input('enter folder directory: ')
+
+        title_to_filename(path)

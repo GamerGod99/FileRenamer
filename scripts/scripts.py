@@ -2,6 +2,9 @@ import os
 
 
 def cut_single(str, pos):
+    if len(pos) == 1:
+        pos = list(pos)
+        pos.append(None)
     str, ext = os.path.splitext(str)
     return str[pos[0]:pos[1]] + ext
 
