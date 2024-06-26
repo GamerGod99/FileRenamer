@@ -22,5 +22,3 @@ def cut_names(folder_path, pos):
 
     except Exception as e:
         print(f'Error: {e}')
-
-
